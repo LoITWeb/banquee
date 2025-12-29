@@ -47,7 +47,8 @@ body {
 	margin: var(--margin)
 }
 
-.header_container {
+.header_container,
+.footer_container {
 	max-width: var(--header-width);
 	padding: var(--padding);
 	margin: var(--margin)
