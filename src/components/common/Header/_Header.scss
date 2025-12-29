@@ -1,0 +1,249 @@
+.header {
+	padding: 20px 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list {
+	display: flex;
+	gap: 10px;
+}
+
+.nav__icon {
+	display: none;
+}
+
+/* Nav Icon */
+.mobile-nav-btn {
+	--time: 0.1s;
+
+	--width: 40px;
+	--height: 30px;
+
+	--line-height: 3px;
+	--spacing: 8px;
+
+	--color: var(--icon-primary);
+	--radius: 4px;
+
+	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+	width: var(--width);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 999;
+}
+
+.nav-icon {
+	position: relative;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color);
+	border-radius: var(--radius);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+	content: '';
+	display: block;
+
+	position: absolute;
+	left: 0;
+
+	width: var(--width);
+	height: var(--line-height);
+
+	border-radius: var(--radius);
+	background-color: var(--color);
+	transition: transform var(--time) ease-in,
+		top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+	top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.nav-icon::after {
+	top: calc(var(--line-height) + var(--spacing));
+}
+
+.nav-icon.nav-icon--active {
+	background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+	top: 0;
+	transition: top var(--time) linear,
+		transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+	transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+	transform: rotate(-45deg);
+}
+
+/* Mobile Nav */
+.mobile-nav {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: var(--background-primary-light);
+	transition: all 0.2s ease-in;
+}
+
+.mobile-nav--open {
+	top: 0;
+}
+
+.mobile-nav a {
+	color: var(--text-default);
+}
+
+.mobile-nav__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	font-size: 28px;
+}
+
+.nav-item.accordion-item {
+	position: relative;
+}
+
+.nav-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	padding: 8px 12px;
+	text-decoration: none;
+	color: var(--text-default);
+	background: var(--text-inverse);
+	transition: all 190ms ease-in;
+}
+
+.nav-link:hover {
+	background: var(--background-muted);
+}
+
+.chevron {
+	transition: transform 0.3s ease;
+}
+
+.accordion-content {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 120px;
+	z-index: 100;
+	background: var(--text-inverse);
+	border-radius: 8px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+	opacity: 0;
+	transform: translateY(10px);
+	pointer-events: none;
+}
+
+.nav-column {
+	min-height: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-column li a {
+	display: block;
+	padding: 10px 20px;
+	color: var(--text-default);
+	text-decoration: none;
+	font-size: 15px;
+	transition: background 0.2s;
+}
+
+.nav-column li a:hover {
+	background: var(--background-muted);
+}
+
+.accordion-header svg {
+	transition: transform 0.3s ease;
+}
+
+.accordion-item.open svg {
+	transform: rotate(180deg);
+}
+
+.accordion-item.open .chevron {
+	transform: rotate(180deg);
+}
+
+.accordion-item.open .accordion-content {
+	grid-template-rows: 1fr;
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: all;
+}
+
+.account-list {
+	display: flex;
+	gap: 20px;
+}
+
+.login-link {
+	position: relative;
+	font-family: var(--second-family);
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	color: var(--text-primary);
+	transition: all 190ms ease-in;
+}
+
+.login-link:hover {
+	color: #468b7c;
+}
+
+.login-link:active {
+	top: 2px;
+}
+
+.account-link {
+	position: relative;
+	border-radius: 6px;
+	padding: 12px 16px;
+	font-family: var(--second-family);
+	font-size: 15px;
+	line-height: 100%;
+	color: var(--text-inverse);
+	background: var(--text-primary);
+	transition: all 190ms ease-in;
+}
+
+.account-link:hover {
+	background: #468b7c;
+}
+
+.account-link:active {
+	top: 2px;
+}

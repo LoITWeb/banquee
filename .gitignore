@@ -1,0 +1,21 @@
+# Зависимости
+node_modules/
+
+# Папки сборки (в основной ветке они не нужны)
+dist/
+build/
+
+# Системные файлы и настройки редактора
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Изображения (твои правила)
+src/**/images/*.webp
+!src/**/images/keep.webp

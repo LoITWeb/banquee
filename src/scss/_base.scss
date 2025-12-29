@@ -1,0 +1,68 @@
+:root {
+	--text-default: #1a191e;
+	--text-muted: rgba(26, 25, 30, 0.5);
+	--text-primary: #5bb5a2;
+	--text-inverse: #fff;
+	--background-default: #fff;
+	--background-muted: #f8f8f8;
+	--background-secondary: #1a191e;
+	--background-primary: #5bb5a2;
+	--background-primary-light: #e8f2ee;
+	--border-default: #e8e8e8;
+	--border-primary: #1a191e;
+	--icon-default: #1a191e;
+	--icon-primary: #5bb5a2;
+	--icon-inverse: #fff;
+
+	--max-width: 1240px;
+	--header-width: 1440px;
+	--padding: 0 20px;
+	--margin: 0 auto;
+
+	--font-family: "Inter", sans-serif;
+	--second-family: "DMSans", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 160%;
+	color: var(--text-default);
+	background: var(--text-inverse);
+
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: var(--max-width);
+	padding: var(--padding);
+	margin: var(--margin)
+}
+
+.header_container {
+	max-width: var(--header-width);
+	padding: var(--padding);
+	margin: var(--margin)
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.footer {
+	margin-top: auto;
+}

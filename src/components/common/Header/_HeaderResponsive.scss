@@ -1,0 +1,74 @@
+@media (max-width: 900px) {
+
+	.logo,
+	.nav-list {
+		display: none;
+	}
+
+	.nav__icon {
+		display: block;
+	}
+
+	.mobile-nav {
+		justify-content: flex-start;
+		padding-top: 180px;
+		overflow-y: auto;
+	}
+
+	.mobile-nav .accordion-content {
+		position: static;
+		opacity: 0;
+		transform: none;
+		pointer-events: none;
+		box-shadow: none;
+		width: 100%;
+		background: transparent;
+		overflow: hidden;
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+	}
+
+	.mobile-nav .accordion-item.open .accordion-content {
+		grid-template-rows: 1fr;
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	.mobile-nav__list {
+		padding: 0 20px;
+		align-items: flex-start;
+	}
+
+	.mobile-nav .accordion-item {
+		width: 100%;
+	}
+
+	.mobile-nav .accordion-header {
+		display: flex;
+		width: 100%;
+	}
+
+	.mobile-nav .nav-column {
+		padding-left: 15px;
+		min-height: 0;
+	}
+
+	.mobile-nav .nav-column li a {
+		font-size: 20px;
+		padding: 0;
+		margin: 6px 0 6px;
+		background: none;
+		transition: all 140ms ease-in;
+	}
+
+	.mobile-nav .nav-column li a:hover {
+		color: var(--text-muted);
+	}
+}
+
+@media (max-width: 568px) {
+	.account-link {
+		padding: 6px 16px;
+	}
+}
