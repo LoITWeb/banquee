@@ -10,8 +10,7 @@
 	}
 
 	.mobile-nav {
-		justify-content: flex-start;
-		padding-top: 180px;
+		justify-content: center;
 		overflow-y: auto;
 	}
 
@@ -67,7 +66,7 @@
 	}
 }
 
-@media (max-width: 568px) {
+@media (max-width: 576px) {
 	.account-link {
 		padding: 6px 16px;
 	}

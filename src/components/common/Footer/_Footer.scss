@@ -10,10 +10,15 @@
 	margin-bottom: 80px;
 }
 
+.footer-logo {
+	min-width: 131px;
+}
+
 .footer-content-block {
 	display: flex;
-	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
+	width: 1100px;
+	padding: 0 100px;
 }
 
 .footer-block-title {
@@ -59,6 +64,11 @@
 
 	a {
 		color: var(--text-primary);
+		transition: all 140ms ease-in;
+	}
+
+	a:hover {
+		color: #468b7c;
 	}
 }
 

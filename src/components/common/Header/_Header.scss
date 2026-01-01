@@ -139,7 +139,7 @@
 	text-decoration: none;
 	color: var(--text-default);
 	background: var(--text-inverse);
-	transition: all 190ms ease-in;
+	transition: all 140ms ease-in;
 }
 
 .nav-link:hover {
@@ -156,7 +156,7 @@
 	left: 0;
 	min-width: 120px;
 	z-index: 100;
-	background: var(--text-inverse);
+	background: var(--background-default);
 	border-radius: 8px;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 	display: grid;
@@ -217,7 +217,7 @@
 	line-height: 100%;
 	letter-spacing: -0.03em;
 	color: var(--text-primary);
-	transition: all 190ms ease-in;
+	transition: all 140ms ease-in;
 }
 
 .login-link:hover {
@@ -236,8 +236,8 @@
 	font-size: 15px;
 	line-height: 100%;
 	color: var(--text-inverse);
-	background: var(--text-primary);
-	transition: all 190ms ease-in;
+	background: var(--background-primary);
+	transition: all 140ms ease-in;
 }
 
 .account-link:hover {
