@@ -1,1 +1,106 @@
-.hero {}
+.hero {
+	padding: 80px 0;
+}
+
+.hero-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-block {
+	width: 600px;
+	margin-right: 10px;
+}
+
+.hero-title {
+	font-family: var(--second-family);
+	font-size: 100px;
+	line-height: 110%;
+	letter-spacing: -0.03em;
+	margin-bottom: 10px;
+}
+
+.hero-text {
+	font-size: 24px;
+	line-height: 170%;
+	margin-bottom: 40px;
+}
+
+.hero-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 230px);
+	column-gap: 40px;
+	row-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.advantages {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.advant-icon {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	fill: var(--text-primary);
+	background: var(--background-primary-light);
+}
+
+.advantages-text {
+	font-size: 18px;
+	line-height: 180%;
+}
+
+.hero-buttons {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.account-btn {
+	position: relative;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	border-radius: 6px;
+	padding: 16px 24px;
+	width: 165px;
+	height: 50px;
+	color: var(--text-inverse);
+	background: var(--background-primary);
+	transition: all 140ms ease-in;
+}
+
+.account-btn:hover {
+	background: #468b7c;
+}
+
+.account-btn:active {
+	top: 2px;
+}
+
+.compare-btn {
+	position: relative;
+	font-family: var(--second-family);
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--text-primary);
+	transition: all 140ms ease-in;
+}
+
+.compare-btn:active {
+	top: 2px;
+}
+
+.compare-arrow {
+	width: 24px;
+	height: 24px;
+	fill: var(--text-primary);
+}
