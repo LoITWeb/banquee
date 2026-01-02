@@ -175,34 +175,15 @@
 	padding-top: 20px;
 }
 
-.tr-home,
-.tr-savings,
-.tr-cards,
-.tr-account {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	p {
-		position: relative;
-		font-size: 12px;
-		color: var(--text-default);
-		transition: all 140ms ease-in;
-	}
-
-	p:hover {
-		color: var(--text-primary);
-	}
-}
-
 .tr-menu-icon {
+	justify-content: center;
 	position: relative;
-	width: 22px;
-	height: 22px;
+	width: 45px;
+	height: 45px;
 	fill: var(--text-default);
 	transition: all 140ms ease-in;
 }
 
 .tr-menu-icon:hover {
-	fill: var(--icon-primary);
+	fill: var(--text-primary);
 }
