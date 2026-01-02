@@ -10,7 +10,7 @@
     "update": "npx npm-check-updates -u && npm install",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-		"ship": "git add . && git commit -m \"Update project v1.2\" && git push origin main && npm run deploy",
+		"ship": "git add . && git commit -m \"Update project v1.3\" && git push origin main && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
