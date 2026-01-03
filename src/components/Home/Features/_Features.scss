@@ -100,7 +100,7 @@
 	font-size: 14px;
 }
 
-.transactions-block {
+.trans-block {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -130,13 +130,13 @@
 	fill: var(--icon-primary);
 }
 
-.transactions-socials {
+.trans-socials {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.transaction-card {
+.trans-card {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -162,13 +162,13 @@
 	}
 }
 
-.transaction-text {
+.trans-text {
 	font-family: var(--second-family);
 	line-height: 140%;
 	letter-spacing: -0.03em;
 }
 
-.transactions-menu {
+.trans-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

@@ -10,7 +10,7 @@
     "update": "npx npm-check-updates -u && npm install",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-		"ship": "git add . && git commit -m \"Update project v1.4\" && git push origin main && npm run deploy",
+    "ship": "git add . && git commit -m \"Update project v1.5\" && git push origin main && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -551,6 +551,7 @@
     "supports-preserve-symlinks-flag": "^1.0.0",
     "sver": "^1.8.4",
     "svgo": "^2.8.0",
+    "swiper": "^12.0.3",
     "tar": "^6.2.1",
     "tar-stream": "^1.6.2",
     "teex": "^1.0.1",

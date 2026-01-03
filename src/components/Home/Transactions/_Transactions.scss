@@ -1,1 +1,80 @@
+// @import "swiper/css";
+// @use "./../../../../node_modules/swiper/swiper.css";
 
+.transactions {
+	background: var(--background-primary-light);
+}
+
+.transactions-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.transactions-block {
+	width: 560px;
+	padding: 80px 0;
+}
+
+.transactions-title {
+	font-family: var(--second-family);
+	font-size: 64px;
+	line-height: 110%;
+	letter-spacing: -0.03em;
+	margin-bottom: 10px;
+}
+
+.transactions-text {
+	font-size: 20px;
+	line-height: 180%;
+	margin-bottom: 20px;
+}
+
+.transactions-sub-block {}
+
+.transactions-sub {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 10px;
+}
+
+.transactions-sub-icon {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	fill: var(--text-inverse);
+	background: var(--background-primary);
+}
+
+.transactions-sub-text {
+	font-size: 18px;
+	line-height: 180%;
+}
+
+.transactions-vertical-slider {
+	padding: 80px 0 0 0;
+}
+
+.my-vertical-slider {
+	height: 560px; // Обязательно задай высоту для вертикального слайдера!
+	overflow: hidden;
+
+	.swiper-wrapper {
+		// Магия для идеально плавного, линейного движения без остановок:
+		transition-timing-function: linear !important;
+	}
+}
+
+.transactions-card {
+	border-radius: 10px;
+	padding: 16px 24px 16px 16px;
+	width: 400px;
+	height: 83px;
+	background: var(--background-default);
+}
+
+.transactions-card-block {}
+
+.transactions-card-text {}
+
+.transactions-price {}
