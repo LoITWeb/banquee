@@ -81,10 +81,6 @@ document.addEventListener('keydown', (e) => {
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
 
-// Импорт стилей прямо в JS (Esbuild это проглотит, если настроено, 
-// но надежнее импортировать в SCSS, см. Шаг 3)
-// import 'swiper/css'; 
-
 const verticalSlider = new Swiper('.my-vertical-slider', {
 	modules: [Autoplay],
 	direction: 'vertical',    // Вертикальная ориентация
