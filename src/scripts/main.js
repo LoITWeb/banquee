@@ -79,6 +79,7 @@ document.addEventListener('keydown', (e) => {
 
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
+import { EffectCreative } from 'swiper/modules';
 
 // Transactions Slider
 const verticalTransactionsSlider = new Swiper('.my-transactions-slider', {
@@ -99,15 +100,40 @@ const verticalTransactionsSlider = new Swiper('.my-transactions-slider', {
 // Notifactions Slider
 const verticalNotifactionsSlider = new Swiper('.my-notifactions-slider', {
 	modules: [Autoplay],
-	direction: 'vertical',    
-	loop: true,               
-	spaceBetween: 10,         
-	slidesPerView: 5,         
-	speed: 3000,              
-	allowTouchMove: false,    
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 10,
+	slidesPerView: 5,
+	speed: 3000,
+	allowTouchMove: false,
 
 	autoplay: {
-		delay: 0,               
+		delay: 0,
 		disableOnInteraction: false,
+	},
+});
+
+// Cards Slider
+const cardsSlider = new Swiper('.cards-stack', {
+	modules: [EffectCreative],
+	effect: 'creative',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 1,
+	slideToClickedSlide: true, // Клик по карте делает её главной
+	loop: true,
+
+	creativeEffect: {
+		prev: {
+			// Настройки для карт, которые ушли "назад" (если пролистывать)
+			shadow: false,
+			translate: [0, '-15%', -100], // Смещение вверх на 15% и вглубь
+			rotateX: -10, // Легкий наклон для объема
+		},
+		next: {
+			// Настройки для карт, которые "ждут" сзади
+			translate: [0, '-15%', -100], // Показываются сверху на 15%
+			rotateX: -10,
+		},
 	},
 });
