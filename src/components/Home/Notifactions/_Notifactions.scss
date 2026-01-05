@@ -47,12 +47,20 @@
 	gap: 10px;
 }
 
-.notified-icon {
-	width: 18px;
-	height: 18px;
+.notified-icon-wrapper {
+	width: 26px;
+	height: 26px;
 	border-radius: 50%;
-	stroke: var(--icon-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: var(--background-primary-light);
+}
+
+.notified-icon {
+	width: 22px;
+	height: 22px;
+	fill: var(--icon-primary);
 }
 
 .notifactions-btn {

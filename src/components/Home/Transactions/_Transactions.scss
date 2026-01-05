@@ -34,12 +34,20 @@
 	margin-bottom: 10px;
 }
 
-.transactions-sub-icon {
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	fill: var(--text-inverse);
-	background: var(--background-primary);
+.transactions-icon-wrapper {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-primary);
+}
+
+.transactions-icon {
+  width: 22px; 
+  height: 22px;
+  fill: var(--text-inverse);
 }
 
 .transactions-sub-text {
