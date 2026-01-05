@@ -51,6 +51,12 @@
 	top: 2px;
 }
 
+.savings-icon-btn {
+	width: 24px;
+	height: 24px;
+	fill: var(--icon-primary);
+}
+
 .savings-sub-content {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);

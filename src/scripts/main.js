@@ -77,11 +77,11 @@ document.addEventListener('keydown', (e) => {
 
 
 
-// Slider
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
 
-const verticalSlider = new Swiper('.my-vertical-slider', {
+// Transactions Slider
+const verticalTransactionsSlider = new Swiper('.my-transactions-slider', {
 	modules: [Autoplay],
 	direction: 'vertical',    // Вертикальная ориентация
 	loop: true,               // Зацикленность
@@ -92,6 +92,22 @@ const verticalSlider = new Swiper('.my-vertical-slider', {
 
 	autoplay: {
 		delay: 0,               // Задержка между переходами 0
+		disableOnInteraction: false,
+	},
+});
+
+// Notifactions Slider
+const verticalNotifactionsSlider = new Swiper('.my-notifactions-slider', {
+	modules: [Autoplay],
+	direction: 'vertical',    
+	loop: true,               
+	spaceBetween: 10,         
+	slidesPerView: 5,         
+	speed: 3000,              
+	allowTouchMove: false,    
+
+	autoplay: {
+		delay: 0,               
 		disableOnInteraction: false,
 	},
 });
