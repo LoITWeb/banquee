@@ -36,45 +36,52 @@
 	margin-bottom: 50px;
 }
 
-// Стили для твоего слайдера с картами
 .cards-stack {
-	width: 350px; // Ширина карты
-	height: 250px; // Высота карты
-	margin: 50px auto;
-	overflow: visible; // Чтобы верхние карты были видны
-
-	// Тот самый код из effect-creative + важные дополнения
-	.swiper-slide {
-		backface-visibility: hidden;
-		overflow: hidden;
-		transition-property: transform, opacity, height;
-
-		// Стили самих карточек
-		border-radius: 15px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); // Добавим тень для объема
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-
-	// Чтобы активная карта была всегда сверху всех
-	.swiper-slide-active {
-		z-index: 10;
-	}
+	width: 350px;
+	/* Ширина одной карты */
+	height: 220px;
+	/* Высота карты */
+	margin: 80px auto;
+	/* Отступ сверху, чтобы видно было "стопку" */
+	overflow: visible !important;
+	/* Обязательно, чтобы верхние карты торчали */
 }
 
-.swiper-creative {
-	.swiper-slide {
-		backface-visibility: hidden;
-		overflow: hidden;
-		transition-property: transform, opacity, height;
-	}
+.cards-stack .swiper-slide {
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	opacity: 0.7;
+	/* Неактивные карты чуть прозрачные */
+	transition: all 0.4s ease;
+	backface-visibility: hidden;
+}
+
+.cards-stack .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Активная (главная) карта */
+.cards-stack .swiper-slide-active {
+	opacity: 1;
+	z-index: 10;
+	transform: translateY(0) !important;
+	/* На всякий случай перебиваем трансформацию */
+}
+
+/* Предыдущие слайды (те, что "под" активной) */
+.cards-stack .swiper-slide-prev {
+	transform: translateY(20px) scale(0.92) !important;
+	opacity: 0.6;
+}
+
+/* Ещё дальше назад */
+.cards-stack .swiper-slide:nth-child(1):not(.swiper-slide-active) {
+	transform: translateY(40px) scale(0.85) !important;
+	opacity: 0.5;
 }
 
 .cards-buttons {

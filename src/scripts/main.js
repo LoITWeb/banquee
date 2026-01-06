@@ -77,9 +77,10 @@ document.addEventListener('keydown', (e) => {
 
 
 
+// Sliders
 import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules';
-import { EffectCreative } from 'swiper/modules';
+import { EffectCards, Navigation, Pagination, Autoplay } from 'swiper/modules';
+Swiper.use([EffectCards]);
 
 // Transactions Slider
 const verticalTransactionsSlider = new Swiper('.my-transactions-slider', {
@@ -115,25 +116,24 @@ const verticalNotifactionsSlider = new Swiper('.my-notifactions-slider', {
 
 // Cards Slider
 const cardsSlider = new Swiper('.cards-stack', {
-	modules: [EffectCreative],
-	effect: 'creative',
-	grabCursor: true,
+	effect: 'cards',              // Именно этот эффект даёт стопку карт
+	grabCursor: true,             // Рука при наведении
 	centeredSlides: true,
-	slidesPerView: 1,
-	slideToClickedSlide: true, // Клик по карте делает её главной
-	loop: true,
+	slidesPerView: 'auto',         // Важно для cards эффекта
+	slideToClickedSlide: true,    // Клик по любой карте → она становится главной
+	loop: true,                   // Бесконечная прокрутка (удобно при 3 картах)
 
-	creativeEffect: {
-		prev: {
-			// Настройки для карт, которые ушли "назад" (если пролистывать)
-			shadow: false,
-			translate: [0, '-15%', -100], // Смещение вверх на 15% и вглубь
-			rotateX: -10, // Легкий наклон для объема
-		},
-		next: {
-			// Настройки для карт, которые "ждут" сзади
-			translate: [0, '-15%', -100], // Показываются сверху на 15%
-			rotateX: -10,
-		},
+	cardsEffect: {
+		slideShadows: true,         // Тени для объёма
+		transformEl: null,          // Не нужно
+		rotate: false,              // Без поворота (чище выглядит)
+		perSlideOffset: 6,         // Смещение каждой следующей карты (в px)
+		perSlideRotate: 0,          // Без поворота
 	},
+
+	// Опционально: навигация стрелками или точками, если захочешь
+	// navigation: {
+	//   nextEl: '.swiper-button-next',
+	//   prevEl: '.swiper-button-prev',
+	// },
 });
