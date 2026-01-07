@@ -36,80 +36,61 @@
 	margin-bottom: 50px;
 }
 
-.cards-stack {
-	width: 350px;
-	/* Ширина одной карты */
-	height: 220px;
-	/* Высота карты */
-	margin: 80px auto;
-	/* Отступ сверху, чтобы видно было "стопку" */
-	overflow: visible !important;
-	/* Обязательно, чтобы верхние карты торчали */
-}
-
-.cards-stack .swiper-slide {
-	border-radius: 15px;
-	overflow: hidden;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-	opacity: 0.7;
-	/* Неактивные карты чуть прозрачные */
-	transition: all 0.4s ease;
-	backface-visibility: hidden;
-}
-
-.cards-stack .swiper-slide img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-}
-
-/* Активная (главная) карта */
-.cards-stack .swiper-slide-active {
-	opacity: 1;
-	z-index: 10;
-	transform: translateY(0) !important;
-	/* На всякий случай перебиваем трансформацию */
-}
-
-/* Предыдущие слайды (те, что "под" активной) */
-.cards-stack .swiper-slide-prev {
-	transform: translateY(20px) scale(0.92) !important;
-	opacity: 0.6;
-}
-
-/* Ещё дальше назад */
-.cards-stack .swiper-slide:nth-child(1):not(.swiper-slide-active) {
-	transform: translateY(40px) scale(0.85) !important;
-	opacity: 0.5;
-}
-
 .cards-buttons {
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 30px;
 	justify-content: center;
 }
 
 .card-btn-left {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: var(--second-family);
 	font-size: 18px;
-	line-height: 100%;
-	letter-spacing: -0.03em;
-	color: var(--text-inverse);
-	border-radius: 6px;
 	padding: 16px 24px;
+	letter-spacing: -0.03em;
+	border-radius: 6px;
+	width: 165px;
+	height: 50px;
+	color: var(--text-inverse);
 	background: var(--background-primary);
+	transition: all 140ms ease-in;
+}
+
+.card-btn-left:hover {
+	background: #468b7c;
+}
+
+.card-btn-left:active {
+	top: 2px;
 }
 
 .card-btn-right {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: var(--second-family);
 	font-size: 18px;
-	line-height: 100%;
 	letter-spacing: -0.03em;
+	width: 165px;
+	height: 50px;
 	border: 1px solid var(--border-default);
-	color: var(--text-default);
 	border-radius: 6px;
-	padding: 16px 24px;
+	width: 165px;
+	height: 50px;
+	color: var(--text-default);
 	background: var(--background-default);
+	transition: all 140ms ease-in;
+}
+
+.card-btn-right:hover {
+	background: var(--background-primary-light);
+}
+
+.card-btn-right:active {
+	top: 2px;
 }

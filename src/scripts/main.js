@@ -79,8 +79,7 @@ document.addEventListener('keydown', (e) => {
 
 // Sliders
 import Swiper from 'swiper';
-import { EffectCards, Navigation, Pagination, Autoplay } from 'swiper/modules';
-Swiper.use([EffectCards]);
+import { Autoplay } from 'swiper/modules';
 
 // Transactions Slider
 const verticalTransactionsSlider = new Swiper('.my-transactions-slider', {
@@ -112,28 +111,4 @@ const verticalNotifactionsSlider = new Swiper('.my-notifactions-slider', {
 		delay: 0,
 		disableOnInteraction: false,
 	},
-});
-
-// Cards Slider
-const cardsSlider = new Swiper('.cards-stack', {
-	effect: 'cards',              // Именно этот эффект даёт стопку карт
-	grabCursor: true,             // Рука при наведении
-	centeredSlides: true,
-	slidesPerView: 'auto',         // Важно для cards эффекта
-	slideToClickedSlide: true,    // Клик по любой карте → она становится главной
-	loop: true,                   // Бесконечная прокрутка (удобно при 3 картах)
-
-	cardsEffect: {
-		slideShadows: true,         // Тени для объёма
-		transformEl: null,          // Не нужно
-		rotate: false,              // Без поворота (чище выглядит)
-		perSlideOffset: 6,         // Смещение каждой следующей карты (в px)
-		perSlideRotate: 0,          // Без поворота
-	},
-
-	// Опционально: навигация стрелками или точками, если захочешь
-	// navigation: {
-	//   nextEl: '.swiper-button-next',
-	//   prevEl: '.swiper-button-prev',
-	// },
 });
