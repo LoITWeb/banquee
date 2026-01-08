@@ -77,6 +77,7 @@ document.addEventListener('keydown', (e) => {
 
 
 
+import { auto } from 'async';
 // Sliders
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
@@ -105,6 +106,52 @@ const verticalNotifactionsSlider = new Swiper('.my-notifactions-slider', {
 	spaceBetween: 10,
 	slidesPerView: 5,
 	speed: 3000,
+	allowTouchMove: false,
+
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+});
+
+// Testimonials Sliders left, center, right
+const verticalTestimonialsLeftSlider = new Swiper('.my-testimonials-left-slider', {
+	modules: [Autoplay],
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 30,
+	slidesPerView: 2,
+	speed: 6000,
+	allowTouchMove: false,
+
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+});
+
+const verticalTestimonialsCenterSlider = new Swiper('.my-testimonials-center-slider', {
+	modules: [Autoplay],
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 30,
+	slidesPerView: 2,
+	speed: 10000,
+	allowTouchMove: false,
+
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+});
+
+const verticalTestimonialsRightSlider = new Swiper('.my-testimonials-right-slider', {
+	modules: [Autoplay],
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 30,
+	slidesPerView: 2,
+	speed: 8000,
 	allowTouchMove: false,
 
 	autoplay: {
