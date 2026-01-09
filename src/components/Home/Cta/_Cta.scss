@@ -63,13 +63,27 @@
 .cta-buttons {
 	display: flex;
 	gap: 10px;
+
+	a {
+		position: relative;
+		transition: all 140ms ease-in;
+	}
+
+	a:hover {
+		opacity: 0.7;
+	}
+
+	a:active {
+		top: 2px;
+	}
 }
+
 
 .cta-smart {
 	border: 10px solid var(--text-default);
 	border-bottom: none;
 	border-radius: 50px 50px 0 0;
-	padding: 40px 20px 20px 20px;
+	padding: 40px 20px 0 20px;
 	background: var(--background-default);
 }
 
@@ -77,7 +91,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .balance-price {
@@ -95,13 +109,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 40px;
 }
 
 .smart-user-block {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	margin-bottom: 30px;
 }
 
 .smart-text {
@@ -112,7 +126,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .smart-transactions-text {
@@ -123,6 +137,7 @@
 }
 
 .smart-transactions-btn {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 6px;
@@ -130,6 +145,11 @@
 	line-height: 100%;
 	letter-spacing: -0.03em;
 	color: var(--text-primary);
+	transition: all 140ms ease-in;
+}
+
+.smart-transactions-btn:active {
+	top: 2px;
 }
 
 .smart-arrow {
@@ -145,6 +165,7 @@
 	justify-content: space-between;
 	align-items: center;
 	background: var(--background-muted);
+	margin-bottom: 10px;
 }
 
 .smart-apple {

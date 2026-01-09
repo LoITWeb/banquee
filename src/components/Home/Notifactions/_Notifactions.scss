@@ -75,6 +75,7 @@
 	color: var(--text-primary);
 	transition: all 140ms;
 	margin-bottom: 40px;
+	transition: all 140ms ease-in;
 }
 
 .notifactions-btn:active {
@@ -82,8 +83,8 @@
 }
 
 .notifactions-icon {
-	width: 24px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
 	fill: var(--icon-primary);
 }
 
