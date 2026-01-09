@@ -1,5 +1,169 @@
 .cta-content {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
 	border-radius: 20px;
-	padding: 96px 76px;
+	padding: 96px 76px 0 76px;
 	background: var(--background-primary);
+}
+
+.cta-block {
+	width: 520px;
+}
+
+.cta-title {
+	font-family: var(--second-family);
+	font-size: 64px;
+	line-height: 110%;
+	letter-spacing: -0.03em;
+	color: var(--text-inverse);
+	margin-bottom: 20px;
+}
+
+.cta-text {
+	font-size: 18px;
+	line-height: 180%;
+	color: var(--text-inverse);
+	margin-bottom: 30px;
+}
+
+.cta-advant-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-bottom: 50px;
+}
+
+.cta-advant-block {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.advant-svg-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.cta-icon {
+	width: 18px;
+	height: 18px;
+	fill: var(--icon-inverse);
+}
+
+.cta-advant-text {
+	color: var(--text-inverse);
+}
+
+.cta-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.cta-smart {
+	border: 10px solid var(--text-default);
+	border-bottom: none;
+	border-radius: 50px 50px 0 0;
+	padding: 40px 20px 20px 20px;
+	background: var(--background-default);
+}
+
+.smart-balance {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.balance-price {
+	font-family: var(--second-family);
+	font-size: 28px;
+	line-height: 120%;
+	letter-spacing: -0.03em;
+}
+
+.cta-card {
+	margin-bottom: 30px;
+}
+
+.smart-money-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.smart-user-block {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.smart-text {
+	font-size: 14px;
+}
+
+.smart-transactions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.smart-transactions-text {
+	font-family: var(--second-family);
+	font-size: 18px;
+	line-height: 140%;
+	letter-spacing: -0.03em;
+}
+
+.smart-transactions-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-family: var(--second-family);
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	color: var(--text-primary);
+}
+
+.smart-arrow {
+	width: 14px;
+	height: 13px;
+	fill: var(--icon-primary);
+}
+
+.smart-sub {
+	border-radius: 10px;
+	padding: 12px 16px 12px 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--background-muted);
+}
+
+.smart-apple {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.smart-apple-text {
+	font-family: var(--second-family);
+	line-height: 140%;
+
+	span {
+		font-family: var(--font-family);
+		font-size: 12px;
+	}
+}
+
+.smart-sub-price {
+	font-family: var(--second-family);
+	line-height: 140%;
 }
