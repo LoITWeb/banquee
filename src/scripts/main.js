@@ -46,7 +46,7 @@ function mobileNav() {
 
 
 
-// Accordion
+// Header Accordion
 document.addEventListener('click', (e) => {
 	const allItems = document.querySelectorAll('.accordion-item');
 	const isHeaderClick = e.target.closest('.accordion-header');
@@ -158,4 +158,31 @@ const verticalTestimonialsRightSlider = new Swiper('.my-testimonials-right-slide
 		delay: 0,
 		disableOnInteraction: false,
 	},
+});
+
+// Cards Slider
+
+
+
+// Faq Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+	item.addEventListener('click', (e) => {
+		e.stopPropagation();
+		const isActive = item.classList.contains('active');
+
+		// Закрываем все
+		faqItems.forEach(other => other.classList.remove('active'));
+
+		// Открываем текущий, если он не был активен
+		if (!isActive) {
+			item.classList.add('active');
+		}
+	});
+});
+
+// Клик мимо
+document.addEventListener('click', () => {
+	faqItems.forEach(item => item.classList.remove('active'));
 });

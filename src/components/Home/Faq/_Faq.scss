@@ -2,17 +2,17 @@
 	padding: 80px 0;
 }
 
-.faq-content {
+.faq-block-content {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .faq-block {
-	width: 400px;
+	max-width: 400px;
 }
 
-.faq-title {
+.faq-block-title {
 	font-family: var(--second-family);
 	font-size: 64px;
 	line-height: 110%;
@@ -65,4 +65,93 @@
 	width: 17px;
 	height: 16px;
 	fill: var(--icon-primary);
+}
+
+.faq-accordion {
+	width: 100%;
+	max-width: 600px;
+	// Убедись, что родитель не имеет align-items: center, если он во флексе
+
+	.faq-item {
+		border-bottom: 1px solid #EAEAEA;
+		cursor: pointer;
+		display: block; // Гарантируем блочную модель
+
+		&.active {
+			.faq-icon-wrapper {
+				transform: rotate(45deg); // 45 градусов превратят + в х
+				background-color: #00A3FF; // Опционально: закрашиваем кружок
+
+				.line-h,
+				.line-v {
+					background-color: #fff; // Делаем линии белыми на голубом фоне
+				}
+			}
+
+			.faq-content {
+				grid-template-rows: 1fr;
+				margin-bottom: 24px; // Отступ снизу появляется внутри контента
+			}
+		}
+	}
+
+	.faq-trigger {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 24px 0; // Константный паддинг, который не меняется
+	}
+
+	.faq-title {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.faq-icon-wrapper {
+		position: relative;
+		width: 32px;
+		height: 32px;
+		background-color: #F5F5F5;
+		border-radius: 50%;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		flex-shrink: 0; // Чтобы иконку не сплющило
+	}
+
+	.faq-plus {
+
+		.line-h,
+		.line-v {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #00A3FF;
+			transition: background-color 0.3s ease;
+		}
+
+		.line-h {
+			width: 14px;
+			height: 2px;
+		}
+
+		.line-v {
+			width: 2px;
+			height: 14px;
+		}
+	}
+
+	.faq-content {
+		display: grid;
+		grid-template-rows: 0fr; // Схлопнуто
+		transition: grid-template-rows 0.3s ease, margin 0.3s ease;
+		overflow: hidden;
+
+		.faq-inner {
+			min-height: 0;
+			color: #666;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+	}
 }

@@ -9,7 +9,7 @@
 }
 
 .notifactions-block {
-	width: 540px;
+	max-width: 540px;
 }
 
 .notifactions-top-text {
@@ -115,7 +115,7 @@
 .notifactions-card-block {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 20px;
 }
 
 .notifactions-card-text {

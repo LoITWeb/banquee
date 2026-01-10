@@ -21,7 +21,7 @@
 }
 
 .title {
-	width: 600px;
+	max-width: 600px;
 	font-family: var(--second-family);
 	font-size: 64px;
 	line-height: 110%;
@@ -62,7 +62,7 @@
 }
 
 .testimonials-vertical-slider {
-	width: 380px;
+	max-width: 380px;
 }
 
 .my-testimonials-left-slider,

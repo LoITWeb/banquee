@@ -9,7 +9,7 @@
 }
 
 .features-content-block {
-	width: 600px;
+	max-width: 600px;
 }
 
 .features-title {
@@ -31,7 +31,7 @@
 	border: 2px solid var(--border-default);
 	border-radius: 16px;
 	padding: 32px;
-	width: 284px;
+	max-width: 284px;
 	height: 264px;
 	background: var(--background-default);
 	transition: all 140ms ease-in;
@@ -60,7 +60,7 @@
 	border: 10px solid var(--text-default);
 	border-radius: 50px;
 	padding: 30px 20px 20px 20px;
-	width: 380px;
+	max-width: 380px;
 	height: 800px;
 	background: var(--background-default);
 }
@@ -79,7 +79,7 @@
 }
 
 .features-card-img {
-	width: 310px;
+	max-width: 310px;
 	height: 186px;
 	margin: 0 auto;
 }
