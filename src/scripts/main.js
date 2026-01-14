@@ -122,7 +122,7 @@ const verticalTestimonialsLeftSlider = new Swiper('.my-testimonials-left-slider'
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 6000,
-	allowTouchMove: false,
+	allowTouchMove: true,
 
 	autoplay: {
 		delay: 0,
@@ -137,7 +137,7 @@ const verticalTestimonialsCenterSlider = new Swiper('.my-testimonials-center-sli
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 10000,
-	allowTouchMove: false,
+	allowTouchMove: true,
 
 	autoplay: {
 		delay: 0,
@@ -152,7 +152,7 @@ const verticalTestimonialsRightSlider = new Swiper('.my-testimonials-right-slide
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 8000,
-	allowTouchMove: false,
+	allowTouchMove: true,
 
 	autoplay: {
 		delay: 0,

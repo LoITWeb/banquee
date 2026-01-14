@@ -68,7 +68,7 @@
 .my-testimonials-left-slider,
 .my-testimonials-center-slider,
 .my-testimonials-right-slider {
-	height: 960px; 
+	height: 810px; 
 	overflow: hidden;
 
 	.swiper-wrapper {
@@ -82,6 +82,7 @@
 	height: auto !important;
 	border-radius: 6px;
 	border: 1px solid var(--border-default);
+	cursor: pointer;
 	padding: 30px;
 }
 
