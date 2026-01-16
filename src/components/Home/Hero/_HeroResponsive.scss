@@ -1,4 +1,26 @@
 @media (max-width: 1024px) {
+	.hero-content {
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		gap: 40px;
+
+		.hero-block {
+			grid-row: 2;
+		}
+
+		.hero-img {
+			display: flex;
+			margin: auto;
+			grid-row: 1;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-block {
+		max-width: 100%;
+	}
+
 	.hero-title {
 		font-size: 64px;
 	}
@@ -8,6 +30,26 @@
 	}
 
 	.hero-grid {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 100%);
+	}
+
+	.hero-buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 474px) {
+	.hero {
+		padding: 40px 0;
+	}
+
+	.hero-title {
+		font-size: 32px;
+	}
+
+	.hero-text {
+		font-size: 18px;
 	}
 }
