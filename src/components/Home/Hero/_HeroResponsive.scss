@@ -3,16 +3,31 @@
 		display: grid;
 		grid-template-columns: repeat(1, 100%);
 		gap: 40px;
+	}
 
-		.hero-block {
-			grid-row: 2;
-		}
+	.hero-block {
+		max-width: 100%;
+		grid-row: 2;
+	}
 
-		.hero-img {
-			display: flex;
-			margin: auto;
-			grid-row: 1;
-		}
+	.hero-grid {
+		justify-content: center;
+	}
+
+	.hero-buttons {
+		justify-content: center;
+	}
+
+	.hero-img {
+		display: flex;
+		margin: auto;
+		grid-row: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-title {
+		font-size: 80px;
 	}
 }
 
@@ -22,7 +37,7 @@
 	}
 
 	.hero-title {
-		font-size: 64px;
+		font-size: 60px;
 	}
 
 	.hero-text {
@@ -45,11 +60,24 @@
 		padding: 40px 0;
 	}
 
+	.hero-content {
+		gap: 20px;
+	}
+
 	.hero-title {
-		font-size: 32px;
+		font-size: 40px;
 	}
 
 	.hero-text {
 		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.hero-grid {
+		margin-bottom: 30px;
+	}
+
+	.hero-buttons {
+		gap: 20px;
 	}
 }

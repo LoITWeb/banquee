@@ -1,1 +1,55 @@
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+	.transactions-content {
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		gap: 40px;
+	}
+
+	.transactions-block {
+		max-width: 100%;
+		padding: 80px 0 0 0;
+		margin-right: 0;
+	}
+
+	.transactions-vertical-slider {
+		padding: 0;
+	}
+
+	.transactions-card {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.transactions-title {
+		font-size: 54px;
+	}
+}
+
+@media (max-width: 576px) {
+	.transactions-title {
+		font-size: 44px;
+	}
+
+	.transactions-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 474px) {
+	.transactions-content {
+		gap: 20px;
+	}
+
+	.transactions-block {
+		padding: 40px 0 0 0;
+	}
+
+	.transactions-title {
+		font-size: 34px;
+	}
+
+	.transactions-card {
+		padding: 8px;
+	}
+}

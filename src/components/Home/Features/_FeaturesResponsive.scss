@@ -1,1 +1,94 @@
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+	.features-content {
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		gap: 40px;
+	}
+
+	.features-content-block {
+		max-width: 100%;
+	}
+
+	.features-card-block {
+		margin: auto;
+		grid-row: 1;
+	}
+
+	.features-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row: 2;
+	}
+
+	.features-card {
+		max-width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.features-title {
+		font-size: 64px;
+	}
+}
+
+@media (max-width: 576px) {
+	.features-title {
+		font-size: 50px;
+	}
+
+	.features-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.features-card {
+		padding: 16px;
+	}
+}
+
+@media (max-width: 474px) {
+	.features {
+		padding: 40px 0;
+	}
+
+	.features-content {
+		gap: 20px;
+	}
+
+	.features-title {
+		font-size: 34px;
+		margin-bottom: 10px;
+	}
+
+	.features-card-block {
+		padding: 10px;
+		height: 100%;
+		gap: 10px;
+	}
+
+	.current-balance {
+		font-size: 18px;
+	}
+
+	.features-card-img {
+		max-width: 100%;
+		height: 100%;
+	}
+
+	.money-block {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.trans-card {
+		padding: 8px;
+	}
+
+	.tr-card-block {
+		gap: 10px;
+	}
+
+	.trans-menu {
+		padding-top: 10px;
+	}
+}
