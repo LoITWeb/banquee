@@ -1,1 +1,56 @@
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+	.tools-logo {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.tools-content {
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		gap: 40px;
+	}
+
+	.tools-content-block {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.tools-logo {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.tools-title {
+		font-size: 54px;
+	}
+}
+
+@media (max-width: 576px) {
+	.tools-logo {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 20px;
+		gap: 10px;
+	}
+
+	.tools-content {
+		gap: 20px;
+	}
+
+	.tools-title {
+		font-size: 44px;
+		margin-bottom: 10px;
+	}
+
+	.tools-right {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 474px) {
+	.tools {
+		padding: 40px 0;
+	}
+
+	.tools-title {
+		font-size: 34px;
+	}
+}

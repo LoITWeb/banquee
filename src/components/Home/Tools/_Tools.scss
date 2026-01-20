@@ -4,15 +4,10 @@
 }
 
 .tools-logo {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(5, 160px);
 	gap: 20px;
-	margin-bottom: 50px;
-}
-
-.tools-row {
-	display: flex;
-	gap: 20px;
+	margin-bottom: 60px;
 }
 
 .tools-content {
@@ -60,18 +55,18 @@
 
 .tools-icon-wrapper {
 	display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--background-primary-light);
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: var(--background-primary-light);
 }
 
 .tools-icon {
-  width: 22px; 
-  height: 22px;
-  fill: var(--background-primary);
+	width: 22px;
+	height: 22px;
+	fill: var(--background-primary);
 }
 
 .tools-right-text {
