@@ -1,1 +1,52 @@
-@media (max-width: 768px) {}
+@media (max-width: 900px) {
+	.savings-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 40px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.savings-title {
+		font-size: 54px;
+	}
+
+	.savings-sub-content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.savings-title {
+		font-size: 44px;
+	}
+
+	.savings-sub-text {
+		font-size: 18px;
+	}
+
+	.savings-sub-content {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 14px;
+	}
+
+	.savings-card img {
+		margin-bottom: 0;
+	}
+
+	.savings-card-title {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 474px) {
+	.savings {
+		padding: 40px 0;
+	}
+
+	.savings-title {
+		font-size: 34px;
+	}
+}

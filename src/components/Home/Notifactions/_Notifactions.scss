@@ -10,6 +10,7 @@
 
 .notifactions-block {
 	max-width: 540px;
+	margin-right: 20px;
 }
 
 .notifactions-top-text {
@@ -93,7 +94,7 @@
 }
 
 .my-notifactions-slider {
-	height: 500px; 
+	height: 500px;
 	overflow: hidden;
 }
 
@@ -108,7 +109,7 @@
 	border-radius: 10px;
 	padding: 16px;
 	width: 498px;
-	height: 82px;
+	height: 100%;
 	background: var(--background-muted);
 }
 
