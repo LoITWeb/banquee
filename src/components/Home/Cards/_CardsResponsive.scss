@@ -1,1 +1,31 @@
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+	.cards-title {
+		font-size: 64px;
+	}
+}
+
+@media (max-width: 576px) {
+	.cards-title {
+		font-size: 50px;
+	}
+
+	.cards-sub-text {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 474px) {
+	.cards {
+		padding: 40px 0;
+	}
+
+	.cards-title {
+		font-size: 34px;
+	}
+
+	.cards-buttons {
+		flex-direction: column;
+		gap: 20px;
+	}
+}

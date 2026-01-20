@@ -20,7 +20,7 @@
 	align-items: end;
 }
 
-.title {
+.testimonials-title {
 	max-width: 600px;
 	font-family: var(--second-family);
 	font-size: 64px;
@@ -63,12 +63,13 @@
 
 .testimonials-vertical-slider {
 	max-width: 380px;
+	margin: 10px;
 }
 
 .my-testimonials-left-slider,
 .my-testimonials-center-slider,
 .my-testimonials-right-slider {
-	height: 810px; 
+	height: 810px;
 	overflow: hidden;
 
 	.swiper-wrapper {
